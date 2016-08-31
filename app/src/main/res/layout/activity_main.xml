@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select the country:"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="12sp"/>
+
+        <Spinner
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/spinner_bckg"
+            android:id="@+id/country_spinner"
+            >
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:id="@+id/country_info_layout">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:id="@+id/flag_view"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Country Name:"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capital:"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subregion:"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Population:"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/country_name_value"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/capital_value"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/subregion_value"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_gravity="center_vertical"
+                    android:textSize="12sp"
+                    android:id="@+id/population_value"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
